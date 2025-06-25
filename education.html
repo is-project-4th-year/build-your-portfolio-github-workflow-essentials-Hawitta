@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Education</title>
+    <link href="css/education.css" rel="stylesheet">
+    <style>
+        /* Education Page Styles */
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+       <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="education-hero">
+        <h1>My <span>Academic</span> Journey</h1>
+        <p>Where I've studied, what I've learned, and the milestones I've achieved along the way</p>
+    </section>
+
+    <!-- Education Cards -->
+    <div class="education-path">
+        <!-- Card 1 -->
+        <div class="education-card">
+            <div class="card-header">
+                <h3>Master's Degree</h3>
+                <div class="date">2020 - 2024</div>
+            </div>
+            <div class="card-body">
+                <div class="institution">
+                    <div class="institution-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="institution-info">
+                        <h4>Stanford University</h4>
+                        <p>Computer Science</p>
+                    </div>
+                </div>
+                <div class="achievements">
+                    <h5>Key Achievements</h5>
+                    <ul>
+                        <li>Specialized in AI/ML</li>
+                        <li>Published research paper</li>
+                        <li>Teaching Assistant</li>
+                        <li>3.9 GPA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="education-card">
+            <div class="card-header">
+                <h3>Bachelor's Degree</h3>
+                <div class="date">2016 - 2020</div>
+            </div>
+            <div class="card-body">
+                <div class="institution">
+                    <div class="institution-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="institution-info">
+                        <h4>MIT</h4>
+                        <p>Software Engineering</p>
+                    </div>
+                </div>
+                <div class="achievements">
+                    <h5>Key Achievements</h5>
+                    <ul>
+                        <li>Summa Cum Laude</li>
+                        <li>CS Club President</li>
+                        <li>Senior Project Award</li>
+                        <li>3.8 GPA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="education-card">
+            <div class="card-header">
+                <h3>Diploma</h3>
+                <div class="date">2014 - 2016</div>
+            </div>
+            <div class="card-body">
+                <div class="institution">
+                    <div class="institution-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="institution-info">
+                        <h4>Tech Institute</h4>
+                        <p>Advanced Programming</p>
+                    </div>
+                </div>
+                <div class="achievements">
+                    <h5>Key Achievements</h5>
+                    <ul>
+                        <li>Developed first mobile app</li>
+                        <li>Data Structures focus</li>
+                        <li>Team project leader</li>
+                        <li>Perfect Attendance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="education-cta">
+        <h2>See how I've applied my education</h2>
+        <a href="projects.html" class="cta-button">View My Projects</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-heading">Connect With Me</h3>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-heading">Contact Info</h3>
+            <p><i class="fas fa-envelope"></i> iamhawiana@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +254 742063263</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Hawiana Abebe. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Add this in your head section to load Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+    <!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

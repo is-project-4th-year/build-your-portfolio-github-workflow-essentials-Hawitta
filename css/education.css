@@ -59,10 +59,11 @@
         }
         
             
-        .education-hero {
+        .education-hero { /**MY ACADEMIC JOURNEY DIV**/
             background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%);
             color: white;
             Z-index: 2;
+            min-height: 20vh;
             padding: 8rem 2rem 6rem;
             text-align: center;
         }
@@ -93,6 +94,28 @@
             gap: 2rem;
         }
         
+        .certificate-section { /**MY ACADEMIC JOURNEY DIV**/
+            background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%);
+            color: white;
+            Z-index: 2;
+            padding: 6rem 4rem;
+            text-align: center;
+
+            h2{
+                font-family: 'Baguede';
+            }
+        }
+
+         .certificate-path {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            gap: 2rem;
+}
+
         .education-card {
             flex: 1;
             min-width: 300px;
@@ -106,17 +129,19 @@
         
         .education-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2);
+            box-shadow: 0 15px 40px rgba(18, 52, 8, 0.2);
         }
         
         .card-header {
-            background-color: #8a2be2;
-            color: white;
+            background-color: var(--headline1);
+            color: black;
+            font-family: 'Baguede';
             padding: 1.5rem;
             text-align: center;
         }
         
-        .card-header h3 {
+        .card-header h3 { /** MASTERS, BACHELORS**/
+            font-family: 'Baguede';
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
         }
@@ -145,18 +170,19 @@
             align-items: center;
             justify-content: center;
             margin-right: 1rem;
-            color: #8a2be2;
+            color: #000;
             font-size: 1.5rem;
         }
         
         .institution-info h4 {
+            font-family: 'Roboto';
             font-size: 1.1rem;
             margin-bottom: 0.2rem;
         }
         
         .institution-info p {
             font-size: 0.9rem;
-            color: #666;
+            color: #000;
         }
         
         .achievements {
@@ -165,8 +191,9 @@
         
         .achievements h5 {
             font-size: 1rem;
+
             margin-bottom: 0.8rem;
-            color: #8a2be2;
+            color: var(--background);
         }
         
         .achievements ul {
@@ -181,7 +208,7 @@
         
         .achievements li::before {
             content: "•";
-            color: #8a2be2;
+            color: #000;
             font-size: 1.5rem;
             position: absolute;
             left: 0;
@@ -190,6 +217,7 @@
         
         .education-cta {
             text-align: center;
+            font-family: 'Baguede';
             padding: 4rem 2rem;
             background-color: #f9f9f9;
         }

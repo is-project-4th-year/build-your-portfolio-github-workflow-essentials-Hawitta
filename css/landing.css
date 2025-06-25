@@ -7,13 +7,20 @@
             font-family: 'Arial', sans-serif;
         }
         
+        @font-face {
+            font-family: 'Baguede';
+            src: url('../BaguedeFree-Regular.otf') format('opentype');
+        }
+
+
         :root {
         --background: #030f0f;
         --headline1: #ffe44b;
         --headline2: #D5F5E3;
         --button: #0b5868;
         --white: #F1f7f6;
-    }
+        --highlights: #077528;
+            }
 
         body {
             background-color: var(--background);
@@ -45,10 +52,11 @@
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
+            font-family: 'Baguede';
         }
         
         nav a:hover {
-            color: #eef973;
+            color: var(--headline1);
         }
         
         /* Hero Section */
@@ -61,6 +69,7 @@
             padding-top: 80px;
         }
         
+        
         .hero-content {
             flex: 1;
             padding-right: 2rem;
@@ -70,10 +79,12 @@
             font-size: 3rem;
             margin-bottom: 1rem;
             color: #ffffff;
+            font-family: 'Baguede', sans-serif;
         }
         
         .hero h1 span {
             color: var(--headline1);
+            font-family: 'Baguede', sans-serif;
         }
         
         .hero p {
@@ -99,24 +110,25 @@
         
         .cta-button {
             display: inline-block;
-            background-color: var(--button);
-            color: #ffffff;
+            background-color: var(--headline1);
+            color: #000000;
             padding: 0.8rem 1.5rem;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
-            border: 2px solid var(--headline1);
+           
         }
         
         .cta-button:hover {
-            background-color: var(--headline1);
+            border: 2px solid var(--highlights);
+            background-color: white;
             color: #000000;
         }
         
         /* About Section */
         .about {
-            min-height: 100vh;
+            min-height: 80vh;
             padding: 5rem 5%;
             background-color: var(--headline1);
             color: #000;
@@ -124,6 +136,7 @@
         
         .section-title {
             text-align: center;
+            font-family: "Baguede";
             margin-bottom: 3rem;
             font-size: 2.5rem;
         }
@@ -148,6 +161,7 @@
         .about-text h3 {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
+            font-family: 'Baguede';
             color: #000000;
         }
         
@@ -158,6 +172,9 @@
         
         .skills {
             flex: 1;
+            h3{
+                font-family: 'Baguede';
+            }
         }
         
         .skill-item {
@@ -168,6 +185,10 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 0.5rem;
+
+            span{
+                font-family: 'Baguede';
+            }
         }
         
         .skill-bar {
@@ -179,7 +200,7 @@
         
         .skill-progress {
             height: 100%;
-            background-color: #baec3c;
+            background-color: var(--highlights);
             border-radius: 5px;
         }
         
@@ -188,11 +209,13 @@
             padding: 3rem 2rem;
             background-color: var(--background);
             text-align: center;
+           min-height: 60vh;
         }
         
         .steps h3 {
             font-size: 2rem;
             margin-bottom: 2rem;
+             font-family: 'Baguede';
             color: var(--headline1);
         }
         

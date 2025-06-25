@@ -10,6 +10,13 @@
         @font-face {
             font-family: 'Baguede';
             src: url('../BaguedeFree-Regular.otf') format('opentype');
+
+        }
+
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url('../Roboto-Light.ttf') format('truetype');
         }
 
 
@@ -26,8 +33,12 @@
             background-color: var(--background);
             color: #ffffff;
             line-height: 1.6;
+            
         }
         
+        p{
+            font-family: "Roboto";
+        }
         /* Navigation */
         nav {
             background-color: var(--background);
@@ -85,6 +96,7 @@
         .hero h1 span {
             color: var(--headline1);
             font-family: 'Baguede', sans-serif;
+            letter-spacing: 0.03em;
         }
         
         .hero p {
@@ -240,6 +252,7 @@
         .step h4 {
             color: black;
             margin-bottom: 1rem;
+            
         }
 
         /* Responsive Design */
@@ -270,3 +283,111 @@
             }
         }
    
+        /* Footer Styles */
+    .site-footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 3rem 0 0;
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+       padding: 0 3rem;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+    }
+    
+    .footer-heading {
+        color: var(--headline1);
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+       
+       
+    }
+    
+    .footer-heading::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 50px;
+        height: 2px;
+        background-color: var(--headline1);
+    }
+    
+    .footer-links {
+        list-style: none;
+    }
+    
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-links a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-family: "Roboto";
+    }
+    
+    .footer-links a:hover {
+        color: var(--headline1);
+        
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .social-links a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+        color: #8a2be2;
+    }
+    
+    .footer-section p {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 1.5rem 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-top: 2rem;
+    }
+    
+    /* Font Awesome icons */
+    .fas, .fab {
+        width: 20px;
+        text-align: center;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            padding: 0 1.5rem;
+        }
+        
+        .footer-section {
+            margin-bottom: 2.5rem;
+        }
+    }

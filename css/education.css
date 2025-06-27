@@ -60,16 +60,18 @@
         
             
         .education-hero { /**MY ACADEMIC JOURNEY DIV**/
-            background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%);
+            /* background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%); */
+            background-color: var(--background);
             color: white;
             Z-index: 2;
-            min-height: 20vh;
+            min-height: 10vh;
             padding: 8rem 2rem 6rem;
             text-align: center;
         }
         
         .education-hero h1 {
             font-size: 3.5rem;
+            font-family:'Baguede';
             margin-bottom: 1rem;
         }
         
@@ -95,7 +97,8 @@
         }
         
         .certificate-section { /**MY ACADEMIC JOURNEY DIV**/
-            background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%);
+            /* background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%); */
+            background-color: var(--background);
             color: white;
             Z-index: 2;
             padding: 6rem 4rem;

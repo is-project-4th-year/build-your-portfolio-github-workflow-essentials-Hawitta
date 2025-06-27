@@ -125,6 +125,9 @@
             font-size: 1.1rem;
         }
 
+        .container{
+            margin-top: -10px;
+        }
         /* Timeline Styles */
         .timeline {
             position: relative;
@@ -214,7 +217,7 @@
 
         /* Project Content Styles */
         .project-img {
-            height: 200px;
+            width: 10%;
             overflow: hidden;
             border-radius: 5px;
             margin: 1rem 0;

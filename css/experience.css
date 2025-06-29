@@ -1,0 +1,431 @@
+ 
+      @font-face {
+            font-family: 'Baguede';
+            src: url('../BaguedeFree-Regular.otf') format('opentype');
+
+        }
+
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url('../Roboto-Light.ttf') format('truetype');
+        }
+
+        :root {
+            --background: #030f0f;
+            --headline1: #ffe44b;
+            --headline2: #D5F5E3;
+            --headline3:  #f9eca0 ;
+            --button: #0b5868;
+            --white: #F1f7f6;
+            --highlights: #077528;
+                }
+
+        body{
+            background-color: var(--background);
+        }
+ 
+
+
+ /* Navigation */
+        nav {
+            background-color: var(--background);
+            padding: 1rem 5%;
+            position: fixed;
+            margin-top: -10px;
+            width: 90%;
+            z-index: 100;
+            
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-family: 'Baguede';
+        }
+        
+        nav a:hover {
+            color: var(--headline1);
+        }
+        
+        p{
+            font-family: 'Roboto';
+        }
+
+
+
+        /* .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+} */
+
+
+
+
+.education-hero { /**MY ACADEMIC JOURNEY DIV**/
+            /* background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%); */
+        background-color: var(--background);
+        color: white;
+        Z-index: 2;
+        min-height: 10vh;
+        padding: 8rem 2rem 6rem;
+        text-align: center;
+    }
+        
+.education-hero h1 {
+    font-size: 3.5rem;
+    font-family:'Baguede';
+    animation: fadeInUp 1s ease;
+    margin-bottom: 1rem;
+}
+        
+.education-hero h1 span {
+    color: var(--headline1);   }
+        
+.education-hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        animation: fadeInUp 1s ease 0.2s forwards;
+        margin: 0 auto 2rem;
+        opacity: 0.9;
+    }
+        
+
+
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header Styles */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+/* Experience Timeline Styles */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.experience {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-self: center;
+    width: 70%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.experience.current {
+    border-left: 5px solid var(--secondary-color);
+    display: flex;
+    align-self: center;
+    width: 70%;
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--headline3);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.company-logo {
+    margin-right: 25px;
+}
+
+.company-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.position-info h2 {
+    font-size: 1.5rem;
+    font-family: 'Baguede';
+    color: var(--background);
+    margin-bottom: 5px;
+}
+
+.position-info h3 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.meta-info {
+    display: flex;
+    gap: 20px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.meta-info span {
+    display: flex;
+    align-items: center;
+}
+
+.meta-info i {
+    margin-right: 5px;
+}
+
+.experience-details {
+    padding: 25px;
+}
+
+.experience-details h4 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--highlights);
+}
+
+.experience-details ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.experience-details li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.experience-details li::before {
+    content: "▹";
+    position: absolute;
+    left: -20px;
+    color: var(--secondary-color);
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tags span {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .company-logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .meta-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .tech-tags {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 30px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .experience-details {
+        padding: 20px 15px;
+    }
+}
+    /* Footer Styles */
+    .site-footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 3rem 0 0;
+        font-size: 1rem;
+        margin-top: 40px;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+       padding: 0 3rem;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+    }
+    
+    .footer-heading {
+        color: var(--headline1);
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+       
+       
+    }
+    
+    .footer-heading::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 50px;
+        height: 2px;
+        background-color: var(--headline1);
+    }
+    
+    .footer-links {
+        list-style: none;
+    }
+    
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-links a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-family: "Roboto";
+    }
+    
+    .footer-links a:hover {
+        color: var(--headline1);
+        
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .social-links a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+        color: #8a2be2;
+    }
+    
+    .footer-section p {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 1.5rem 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-top: 2rem;
+    }
+    
+    /* Font Awesome icons */
+    .fas, .fab {
+        width: 20px;
+        text-align: center;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            padding: 0 1.5rem;
+        }
+        
+        .footer-section {
+            margin-bottom: 2.5rem;
+        }
+    }

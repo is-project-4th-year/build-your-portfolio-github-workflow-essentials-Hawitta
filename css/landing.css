@@ -1,0 +1,369 @@
+ 
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        @font-face {
+            font-family: 'Baguede';
+            src: url('../BaguedeFree-Regular.otf') format('opentype');
+
+        }
+
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url('../Roboto-Light.ttf') format('truetype');
+        }
+
+
+        :root {
+        --background: #030f0f;
+        --headline1: #ffe44b;
+        --headline2: #D5F5E3;
+        --button: #0b5868;
+        --white: #F1f7f6;
+        --highlights: #077528;
+            }
+
+        body {
+            background-color: var(--background);
+            color: #ffffff;
+            line-height: 1.6;
+            
+        }
+        
+        p{
+            font-family: "Roboto";
+        }
+        /* Navigation */
+        nav {
+            background-color: var(--background);
+            padding: 1.5rem 5%;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-family: 'Baguede';
+        }
+        
+        nav a:hover {
+            color: var(--headline1);
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            padding: 0 5%;
+            padding-top: 80px;
+        }
+        
+        
+        .hero-content {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+              animation: fadeInUp 1s ease;
+            font-family: 'Baguede', sans-serif;
+        }
+        
+        .hero h1 span {
+            color: var(--headline1);
+            font-family: 'Baguede', sans-serif;
+            letter-spacing: 0.03em;
+        }
+      
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease 0.2s forwards;
+            max-width: 600px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+          
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-image img {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #077528;
+            box-shadow: 0 10px 30px rgba(124, 223, 91, 0.2);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--headline1);
+            color: #000000;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+           
+        }
+        
+        .cta-button:hover {
+            border: 2px solid var(--highlights);
+            background-color: white;
+            color: #000000;
+        }
+        
+        /* About Section */
+        .about {
+            min-height: 80vh;
+            padding: 5rem 5%;
+            background-color: var(--headline1);
+            color: #000;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-family: "Baguede";
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+        
+        .section-title span {
+            color: #055e2a;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .about-text {
+            flex: 1;
+            padding-right: 3rem;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Baguede';
+            color: #000000;
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .skills {
+            flex: 1;
+            h3{
+                font-family: 'Baguede';
+            }
+        }
+        
+        .skill-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+
+            span{
+                font-family: 'Baguede';
+            }
+        }
+        
+        .skill-bar {
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background-color: var(--highlights);
+            border-radius: 5px;
+        }
+        
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 120px;
+            }
+            
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+            
+            .hero-image img {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 2rem;
+            }
+        }
+   
+        /* Footer Styles */
+    .site-footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 3rem 0 0;
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+       padding: 0 3rem;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+    }
+    
+    .footer-heading {
+        color: var(--headline1);
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+       
+       
+    }
+    
+    .footer-heading::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 50px;
+        height: 2px;
+        background-color: var(--headline1);
+    }
+    
+    .footer-links {
+        list-style: none;
+    }
+    
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-links a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-family: "Roboto";
+    }
+    
+    .footer-links a:hover {
+        color: var(--headline1);
+        
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .social-links a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+        color: #8a2be2;
+    }
+    
+    .footer-section p {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 1.5rem 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-top: 2rem;
+    }
+    
+    /* Font Awesome icons */
+    .fas, .fab {
+        width: 20px;
+        text-align: center;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            padding: 0 1.5rem;
+        }
+        
+        .footer-section {
+            margin-bottom: 2.5rem;
+        }
+    }

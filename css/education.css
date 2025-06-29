@@ -1,0 +1,375 @@
+  /* Education Timeline Styles */
+
+      @font-face {
+            font-family: 'Baguede';
+            src: url('../BaguedeFree-Regular.otf') format('opentype');
+
+        }
+
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url('../Roboto-Light.ttf') format('truetype');
+        }
+
+          :root {
+        --background: #030f0f;
+        --headline1: #ffe44b;
+        --headline2: #D5F5E3;
+        --button: #0b5868;
+        --white: #F1f7f6;
+        --highlights: #077528;
+            }
+
+        body{
+            background-color: var(--background);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--background);
+            padding: 1rem 5%;
+            position: fixed;
+            margin-top: -10px;
+            width: 90%;
+            z-index: 100;
+            
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 2rem;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-family: 'Baguede';
+        }
+        
+        nav a:hover {
+            color: var(--headline1);
+        }
+        
+        p{
+            font-family: 'Roboto';
+        }
+        .education-hero { /**MY ACADEMIC JOURNEY DIV**/
+            /* background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%); */
+            background-color: var(--background);
+            color: white;
+            Z-index: 2;
+            min-height: 10vh;
+            padding: 8rem 2rem 6rem;
+            text-align: center;
+        }
+        
+        .education-hero h1 {
+            font-size: 3.5rem;
+            animation: fadeInUp 1s ease;
+            font-family:'Baguede';
+            margin-bottom: 1rem;
+        }
+        
+        .education-hero h1 span {
+            color: var(--headline1);
+        }
+        
+        .education-hero p {
+            font-size: 1.2rem;
+            animation: fadeInUp 1s ease 0.2s forwards;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+         @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .education-path {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+        
+        
+        .certificate-section { /**MY ACADEMIC JOURNEY DIV**/
+            /* background: linear-gradient(135deg, #000000 0%, var(--highlights) 100%); */
+            background-color: var(--background);
+            color: white;
+            Z-index: 2;
+            padding: 6rem 4rem;
+            text-align: center;
+
+            h2{
+                font-family: 'Baguede';
+            }
+        }
+
+         .certificate-path {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            gap: 2rem;
+}
+
+        .education-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .education-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(18, 52, 8, 0.2);
+        }
+        
+        .card-header {
+            background-color: var(--headline1);
+            color: black;
+            font-family: 'Baguede';
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .card-header h3 { /** MASTERS, BACHELORS**/
+            font-family: 'Baguede';
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-header .date {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .card-body {
+            padding: 1.7rem;
+            margin-bottom: 5px;
+        }
+        
+        .institution {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .institution-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #f5f5f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: #000;
+            font-size: 1.5rem;
+        }
+        
+        .institution-info h4 {
+            font-family: 'Roboto';
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .institution-info p {
+            font-size: 0.9rem;
+            color: #000;
+        }
+        
+        .achievements {
+            margin-top: 1.2rem;
+
+            p{
+                color: #000;
+            }
+        }
+        
+        .achievements h5 {
+            font-size: 1rem;
+
+            margin-bottom: 0.8rem;
+            color: var(--background);
+        }
+        
+        .achievements ul {
+            list-style-type: none;
+        }
+        
+        .achievements li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .achievements li::before {
+            content: "•";
+            color: #000;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -3px;
+        }
+        
+        .education-cta {
+            text-align: center;
+            font-family: 'Baguede';
+            padding: 4rem 2rem;
+            background-color: #f9f9f9;
+        }
+        
+        .education-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .education-hero {
+                padding: 6rem 1rem 4rem;
+            }
+            
+            .education-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .education-card {
+                min-width: 100%;
+            }
+        }
+
+                /* Footer Styles */
+        .site-footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 3rem 0 0;
+            font-size: 1rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        padding: 0 3rem;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-heading {
+            color: var(--headline1);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+
+        
+        
+        }
+        
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 2px;
+            background-color: var(--headline1);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+            font-family: 'Baguede';
+        }
+        
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-family: "Roboto";
+        }
+        
+        .footer-links a:hover {
+            color: var(--headline1);
+            
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .social-links a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #8a2be2;
+        }
+        
+        .footer-section p {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            margin-top: 2rem;
+        }
+        
+        /* Font Awesome icons */
+        .fas, .fab {
+            width: 20px;
+            text-align: center;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                padding: 0 1.5rem;
+            }
+            
+            .footer-section {
+                margin-bottom: 2.5rem;
+            }
+        }

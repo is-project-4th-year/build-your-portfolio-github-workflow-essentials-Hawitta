@@ -2,14 +2,14 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Hawiana Abebe Bedada
+- **GitHub Username**: Hawitta
+- **Email**: iamhawiana@gmail.com / hawiana.bedada@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _(Provide the live link to your deployed portfolio website)_
+  https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-Hawitta/
 
 ## 3. Learnings from the Git Crash Program
 
@@ -18,50 +18,51 @@ For each one, mention:
 
 What you thought it would be like **(Expectation 👀)**
 
-What you actually learned **(Reality 😅)**
+I came in thinking expecting to learn basics on Github (things I already knew), like commiting and merging conflicts. I thought I would just relearn what I do with all my other repositories
+
+What I actually learned **(Reality 😅)**
+
+I learned much more than I expected. I understood how to properly add commit messages, how to use milestones and labels to categorize tasks that needed to be done. I am geniunely more confident now in using Github without the fear of merge conflicts or overwriting a collegue's work. 
 
 And how it helped with your personal portfolio project 💻
 
-make it honest—and if it surprised you, even better!
+I have gone from following the steps on a paper, to actually performing the tasks smoothly without causing conflict or confusion on my commits. I have been able to make branches for separate tasks and attach them to issues and milestones quite easily now.
 
-Example format:
-
-**🧠 What I Thought I'd Learn vs What I Actually Learned**
-**1. Concept: Branching**
-
-`Expectation 👀` : I thought branching was just for developers working on big apps—nothing I’d need for a small project.
-
-`Reality 😅`: Turns out even solo devs need branches! It helped me avoid breaking my main code while testing new designs.
-
-`Impact 💡`: I created a feature branch for my "About Me" section and merged it smoothly into the main branch after testing. Super useful!
 
 ## 4. Screenshots of Key GitHub Features
 
-Include screenshots that demonstrate how you used GitHub to manage your project. For each screenshot, write a short caption explaining what it shows.
-
-> Upload the screenshots to your GitHub repository and reference them here using Markdown image syntax:
-> (you could just simply copy and paste the image into the Assignment.md)
-
-```markdown
-![Caption](path/to/your/image.png)
-```
+Include screenshots that demonstrate how you used GitHub to manage your project. 
 
 ### A. Milestones and Issues
 
-- Screenshot showing your milestone(s) and the issues linked to it.
+- A list of all the issues under Work Experience Milestone and Projects Milestone
+!["My Work Experience Milestone"](github_screenshots/milestone1.png)
+
+!["My Projects Milestone"](github_screenshots/milestone2.png)
+
 
 ### B. Project Board
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+- My project board showing the current progress of the tasks
+
+!["My Project Board"](github_screenshots/project_board.png)
+
 
 ### C. Branching
 
-- Screenshot showing your branch list with meaningful naming.
+- Some of the branches created for this project:
+
+!["My Branches"](github_screenshots/branches.png)
 
 ### D. Pull Requests
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+- A closed merge pull request made during development
+
+!["A merge pull request"](github_screenshots/pull_request.png)
+
 
 ### E. Merge Conflict Resolution
 
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+- Screenshot of a resolved merge conflict in pull request
+
+!["A merge conflict"](github_screenshots/merge_conflict.png)

@@ -216,44 +216,6 @@
             border-radius: 5px;
         }
         
-          /* Steps Section */
-        .steps {
-            padding: 3rem 2rem;
-            background-color: var(--background);
-            text-align: center;
-           min-height: 60vh;
-        }
-        
-        .steps h3 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-             font-family: 'Baguede';
-            color: var(--headline1);
-        }
-        
-        .steps-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .step {
-            flex: 1;
-            min-width: 250px;
-            padding: 1.5rem;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        
-        .step h4 {
-            color: black;
-            margin-bottom: 1rem;
-            
-        }
 
         /* Responsive Design */
         @media (max-width: 768px) {

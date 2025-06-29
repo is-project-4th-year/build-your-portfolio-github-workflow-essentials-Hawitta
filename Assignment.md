@@ -31,9 +31,7 @@ I have gone from following the steps on a paper, to actually performing the task
 
 ## 4. Screenshots of Key GitHub Features
 
-Include screenshots that demonstrate how you used GitHub to manage your project. For each screenshot, write a short caption explaining what it shows.
-
-
+Include screenshots that demonstrate how you used GitHub to manage your project. 
 ### A. Milestones and Issues
 
 - A list of all the issues under Work Experience Milestone and Projects Milestone
